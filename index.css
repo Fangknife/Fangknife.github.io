@@ -1,6 +1,140 @@
 body {
-    font-family: Optima, Segoe, Arial, sans-serif;
-    font-size: 22px;
-    line-height: 175%;
-    padding: 30px;
+    padding: 20px;
+}
+.header {
+    position: relative;
+    height: 22vw;
+    max-height: 300px;
+    width: 100%;
+    /* background-color: rgba(0, 0, 255, 0.099); */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header_img_box {
+    /* background-color: rgba(0, 0, 255, 0.099); */
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.header_img {
+    /* background-color: rgba(0, 0, 255, 0.099); */
+    height: 100%;
+    object-fit: contain;
+    max-width: 100%;
+}
+.header_extra { /* the secret site link*/
+    width: 20%;
+    /* background-color: rgba(255, 192, 203, 0.534); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: none;
+    white-space: nowrap;
+}
+.header_text {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: calc(12px + 2vw);
+    font-family: Arial;
+}
+/* ----------------------------------------------------------------------------- */
+.bio {
+    padding: 20px;
+    /* background-color: rgba(255, 192, 203, 0.534); */
+    font-size: calc(14px + 0.6vw);
+    font-family: Arial;
+    color: black;
+    text-align: center;
+}
+/* ----------------------------------------------------------------------------- */
+.link_container {
+    /* background-color: rgba(0, 0, 255, 0.099); */
+    width: 70vw;
+    max-width: 880px;
+    margin-top: 2.5vh;
+    display: flexbox;
+    justify-self: center;
+    text-align: center; 
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.link_box {
+    padding: 5px;
+    margin: 15px;
+    background-color: black;
+    color: red;
+    font-size: calc(20px + 0.5vw);
+    font-family: Arial;
+    font-weight: bold;
+}
+.secret {
+    display: none;
+}
+/* ----------------------------------------------------------------------------- */
+a:link, a:visited {
+    color: red;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+.link_box a:hover {
+    color: white;
+} 
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+@media (max-width: 700px) {
+    .header {
+        height: 30vw;
+        width: 120%;
+        left: -10%;
+    }
+    .header_img_box {
+        width: 100%;
+    }
+    .header_extra {
+        display: none;
+    }
+    .header_text {
+        display: none;
+    }
+
+
+    /* ----------------------------------------------------------------------------- */
+    .bio {
+        margin-top: 15px;
+        padding: 20px;
+        background-color: black;
+        font-size: 4.2vw;
+        font-family: Arial;
+        color: white;
+    }
+    /* ----------------------------------------------------------------------------- */
+    .link_container {
+        /* background-color: rgba(0, 0, 255, 0.099); */
+        width: 75vw;
+        margin-top: 20px;
+        display: flexbox;
+        justify-self: center;
+        text-align: center; 
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .link_box {
+        padding: 5px;
+        margin: 20px 0px;
+        background-color: black;
+        color: red;
+        font-size: 40px;
+        font-family: Arial;
+        font-weight: bold;
+    }
+    .secret {
+        display: block;
+    }
 }
